@@ -1,15 +1,17 @@
-# 我的 Cloudflare 页面
+# 我的个人主页
 
-这是一个简单的静态网页模板，使用 HTML、CSS 和 JavaScript 构建。你可以将此模板部署到 Cloudflare Pages 上，并根据需要进行修改。
+这是我使用 HTML、CSS 和 JavaScript 构建的静态个人网页，通过 Cloudflare Pages 部署。
 
-## 项目结构
+## 包含内容
 
-- `index.html`：网页的主页面
-- `styles.css`：页面样式
-- `app.js`：动态显示当前时间的 JavaScript 脚本
+- 简洁的个人介绍
+- 联系方式
+- 当前时间动态显示
+- 支持黑夜模式
 
-## 部署到 Cloudflare Pages
+## 如何部署到 Cloudflare Pages
 
-1. 创建一个新的 GitHub 仓库，并上传此项目文件。
-2. 登录到 Cloudflare Pages，连接 GitHub 仓库并部署。
-3. 享受你的网站！
+1. 上传此代码到 GitHub 仓库
+2. 在 Cloudflare Pages 连接仓库并选择构建方式：无框架（None）
+3. 构建目录选择：`./`
+4. 部署后绑定自定义域名即可
