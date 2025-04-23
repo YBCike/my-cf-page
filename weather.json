@@ -1,0 +1,4 @@
+weather_data = get_weather()
+if weather_data:
+    with open('weather.json', 'w', encoding='utf-8') as f:
+        json.dump(weather_data, f, ensure_ascii=False, indent=2)
