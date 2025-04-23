@@ -27,3 +27,24 @@ document.getElementById("comment-form").addEventListener("submit", e => {
 });
 
 renderComments();
+// 渲染天气数据
+function fetchWeatherData() {
+  fetch('weather.json')  // 假设 weather.json 文件和网页在同一个目录
+    .then(response => response.json())
+    .then(data => {
+      const weatherSection = document.getElementById('weather-info');
+      weatherSection.innerHTML = `
+        <p>城市：${data.city}</p>
+        <p>温度：${data.temperature}°C</p>
+        <p>天气：${data.weather}</p>
+        <p>湿度：${data.humidity}%</p>
+        <p>风速：${data.wind} m/s</p>
+      `;
+    })
+    .catch(error => {
+      const weatherSection = document.getElementById('weather-info');
+      weatherSection.innerHTML = `<p>无法加载天气数据。请稍后再试。</p>`;
+    });
+}
+
+fetchWeatherData();
