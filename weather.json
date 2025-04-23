@@ -1,4 +1,7 @@
-weather_data = get_weather()
-if weather_data:
-    with open('weather.json', 'w', encoding='utf-8') as f:
-        json.dump(weather_data, f, ensure_ascii=False, indent=2)
+{
+  "city": "beijing",
+  "temperature": "22",
+  "weather": "多云",
+  "humidity": "46",
+  "wind": "2"
+}
