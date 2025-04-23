@@ -27,6 +27,7 @@ document.getElementById("comment-form").addEventListener("submit", e => {
 });
 
 renderComments();
+
 // 渲染天气数据
 function fetchWeatherData() {
   fetch('weather.json')  // 假设 weather.json 文件和网页在同一个目录
