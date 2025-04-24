@@ -9,16 +9,28 @@
 <body>
   <div class="container">
     <header>
-      <h1>你好，我是 Wei</h1>
+      <h1>你好，我是 YBCike</h1>
       <p>欢迎来到我的个人主页 🎉</p>
       <button id="toggle-theme">切换主题</button>
     </header>
     
 <section class="card" id="weather-section">
-  <h2>🌤️ 当前天气</h2>
-  <div id="weather-info">
-    <p>加载中...</p>
-  </div>
+  <div class="weather-widget">
+        <h2>🌤️当前天气</h2>
+        <div id="weather-container">
+            <div id="location">获取位置中...</div>
+            <div id="current-weather">
+                <img id="weather-icon" src="" alt="天气图标">
+                <span id="temp">--°C</span>
+                <span id="condition">--</span>
+            </div>
+            <div id="weather-details">
+                <p>湿度: <span id="humidity">--%</span></p>
+                <p>风速: <span id="wind">-- km/h</span></p>
+                <p>更新时间: <span id="update-time">--</span></p>
+            </div>
+        </div>
+    </div>
 </section>
 
     <section class="card">
